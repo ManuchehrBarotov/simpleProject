@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MainPage</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="assets/favicon.ico">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="/" class="logo">Логотип</a>
+            <ul class="nav__list">
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <!-- Hero Section для юридических услуг -->
+<section class="hero" id="home">
+    <div class="container">
+        <div class="hero__content">
+            <!-- Левая колонка: Текст и CTA -->
+            <div class="hero__text">
+                <span class="hero__badge">
+                    <i class="fas fa-balance-scale"></i>
+                    Юридическая защита ваших интересов
+                </span>
+                
+                <h1 class="hero__title">
+                    Профессиональная
+                    <span class="highlight-text">юридическая помощь</span>
+                    в сложных ситуациях
+                </h1>
+                
+                <p class="hero__description">
+                    С нами вы получаете не просто консультацию, а полноценную защиту ваших прав и интересов. 
+                    15 лет успешной практики в решении гражданских, уголовных и хозяйственных дел.
+                </p>
+                
+                <div class="hero__cta">
+                    <a href="#contact" class="btn btn--primary btn--large">
+                        <i class="fas fa-phone-alt"></i>
+                        Бесплатная консультация
+                    </a>
+                    <a href="#services" class="btn btn--outline btn--large">
+                        <i class="fas fa-file-contract"></i>
+                        Наши услуги
+                    </a>
+                </div>
+                
+                <div class="hero__trust">
+                    <div class="trust-item">
+                        <i class="fas fa-shield-alt trust-icon"></i>
+                        <div>
+                            <span class="trust-number">100%</span>
+                            <span class="trust-text">Конфиденциальность</span>
+                        </div>
+                    </div>
+                    <div class="trust-item">
+                        <i class="fas fa-gavel trust-icon"></i>
+                        <div>
+                            <span class="trust-number">95%</span>
+                            <span class="trust-text">Успешных дел</span>
+                        </div>
+                    </div>
+                    <div class="trust-item">
+                        <i class="fas fa-user-tie trust-icon"></i>
+                        <div>
+                            <span class="trust-number">24/7</span>
+                            <span class="trust-text">Поддержка клиентов</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Правая колонка: Изображение или видео -->
+            <div class="hero__visual">
+                <div class="hero__image-container">
+                    <!-- Декоративный элемент -->
+                    <div class="legal-badge">
+                        <i class="fas fa-gavel"></i>
+                    </div>
+                    
+                    <!-- Основное изображение -->
+                    <img src="images/lawyer-hero.jpg" alt="Профессиональный юрист" class="hero__image">
+                    
+                    <!-- Статистика в карточках -->
+                    <div class="stats-card">
+                        <div class="stats-card__content">
+                            <span class="stats-number">15+</span>
+                            <span class="stats-text">Лет опыта</span>
+                        </div>
+                    </div>
+                    
+                    <div class="case-card">
+                        <div class="case-card__content">
+                            <i class="fas fa-trophy"></i>
+                            <span>Более 500 выигранных дел</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Специализации в нижней части hero -->
+        <div class="specializations">
+            <h3 class="specializations__title">Основные направления</h3>
+            <div class="specializations__grid">
+                <div class="specialization-card">
+                    <div class="specialization-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h4>Жилищное право</h4>
+                    <p>Споры с застройщиками, сделки с недвижимостью</p>
+                </div>
+                
+                <div class="specialization-card">
+                    <div class="specialization-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h4>Автоюрист</h4>
+                    <p>ДТП, страховые споры, лишение прав</p>
+                </div>
+                
+                <div class="specialization-card">
+                    <div class="specialization-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h4>Бизнес-консультирование</h4>
+                    <p>Договоры, арбитраж, налоговые вопросы</p>
+                </div>
+                
+                <div class="specialization-card">
+                    <div class="specialization-icon">
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <h4>Семейное право</h4>
+                    <p>Разводы, алименты, раздел имущества</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Декоративные элементы -->
+    <div class="hero__decor">
+        <div class="decor-element decor-1"></div>
+        <div class="decor-element decor-2"></div>
+        <div class="decor-element decor-3"></div>
+    </div>
+</section>
+
+
+<!-- О нас -->
+<section class="about" id="about">
+    <div class="container">
+        <!-- Заголовок секции -->
+        <div class="section-header">
+            <span class="section-subtitle">
+                <i class="fas fa-user-tie"></i>
+                О нашей компании
+            </span>
+            <h2 class="section-title">Профессионализм, опыт и индивидуальный подход</h2>
+            <p class="section-description">
+                Юридическая компания "Защита Права" — команда квалифицированных юристов и адвокатов с многолетним опытом успешной практики.
+            </p>
+        </div>
+
+        <div class="about__content">
+            <!-- Левая колонка: Текст и преимущества -->
+            <div class="about__text">
+                <h3 class="about__title">Наша миссия — защита ваших прав и интересов</h3>
+                
+                <p class="about__description">
+                    Мы специализируемся на комплексном юридическом сопровождении физических и юридических лиц. 
+                    Каждое дело для нас — это уникальная задача, требующая глубокого анализа и индивидуального подхода.
+                </p>
+                
+                <div class="about__mission">
+                    <div class="mission-item">
+                        <i class="fas fa-gavel mission-icon"></i>
+                        <div>
+                            <h4>Справедливость и законность</h4>
+                            <p>Строгое соблюдение законов и этических норм в каждой ситуации</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mission-item">
+                        <i class="fas fa-handshake mission-icon"></i>
+                        <div>
+                            <h4>Доверие клиентов</h4>
+                            <p>Более 80% клиентов обращаются к нам по рекомендациям</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mission-item">
+                        <i class="fas fa-shield-alt mission-icon"></i>
+                        <div>
+                            <h4>Конфиденциальность</h4>
+                            <p>Полная защита персональных данных и информации о клиентах</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about__quote">
+                    <div class="quote-content">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p>Право существует для пользы человечества</p>
+                        <span class="quote-author">— Латинское юридическое изречение</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Правая колонка: Статистика и достижения -->
+            <div class="about__stats">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number" data-count="15">0</div>
+                        <div class="stat-text">Лет успешной практики</div>
+                        <div class="stat-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-number" data-count="500">0</div>
+                        <div class="stat-text">Выигранных дел</div>
+                        <div class="stat-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-number" data-count="2000">0</div>
+                        <div class="stat-text">Довольных клиентов</div>
+                        <div class="stat-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-number" data-count="50">0</div>
+                        <div class="stat-text">Юридических направлений</div>
+                        <div class="stat-icon">
+                            <i class="fas fa-balance-scale"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Команда -->
+                <div class="about__team-preview">
+                    <h3 class="team-title">Наша команда</h3>
+                    <div class="team-members">
+                        <div class="team-member">
+                            <div class="member-avatar">
+                                <img src="images/team/lawyer1.jpg" alt="Старший партнер">
+                            </div>
+                            <div class="member-info">
+                                <h4>Иванов Пётр Сергеевич</h4>
+                                <p>Старший партнер, 20 лет опыта</p>
+                            </div>
+                        </div>
+                        
+                        <div class="team-member">
+                            <div class="member-avatar">
+                                <img src="images/team/lawyer2.jpg" alt="Адвокат">
+                            </div>
+                            <div class="member-info">
+                                <h4>Смирнова Анна Владимировна</h4>
+                                <p>Адвокат, специалист по семейному праву</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="#team" class="btn btn--link">
+                        Вся команда <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <!-- Сертификаты -->
+                <div class="certificates">
+                    <h3 class="certificates-title">Наши сертификаты</h3>
+                    <div class="certificates-list">
+                        <div class="certificate">
+                            <i class="fas fa-award"></i>
+                            <span>Член Адвокатской палаты</span>
+                        </div>
+                        <div class="certificate">
+                            <i class="fas fa-certificate"></i>
+                            <span>Международный арбитраж</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Награды и достижения -->
+        <div class="achievements">
+            <h3 class="achievements-title">Наши награды и достижения</h3>
+            <div class="achievements-grid">
+                <div class="achievement">
+                    <div class="achievement-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h4>Лучшая юридическая компания 2023</h4>
+                    <p>По версии Legal Awards</p>
+                </div>
+                
+                <div class="achievement">
+                    <div class="achievement-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>Рейтинг 5.0 на Яндекс.Услугах</h4>
+                    <p>Более 250 отзывов</p>
+                </div>
+                
+                <div class="achievement">
+                    <div class="achievement-icon">
+                        <i class="fas fa-hand-holding-heart"></i>
+                    </div>
+                    <h4>Про-боно деятельность</h4>
+                    <p>Бесплатная помощь социальным проектам</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Кнопка CTA -->
+        <div class="about__cta">
+            <div class="cta-content">
+                <h3>Нужна юридическая консультация?</h3>
+                <p>Запишитесь на первую бесплатную консультацию прямо сейчас</p>
+                <a href="#contact" class="btn btn--primary btn--large">
+                    <i class="fas fa-calendar-check"></i>
+                    Записаться на консультацию
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Декоративные элементы -->
+    <div class="about__decor">
+        <div class="decor-element decor-4"></div>
+        <div class="decor-element decor-5"></div>
+    </div>
+</section>
+
+
+<!-- Контакты -->
+<section class="contacts" id="contact">
+    <div class="container">
+        <!-- Заголовок секции -->
+        <div class="section-header">
+            <span class="section-subtitle">
+                <i class="fas fa-map-marker-alt"></i>
+                Свяжитесь с нами
+            </span>
+            <h2 class="section-title">Как с нами связаться</h2>
+            <p class="section-description">
+                Мы всегда готовы ответить на ваши вопросы. Выберите удобный способ связи или посетите наш офис.
+            </p>
+        </div>
+
+        <div class="contacts__grid">
+            <!-- Левая колонка: Информация -->
+            <div class="contacts__info">
+                <!-- Основные контакты -->
+                <div class="contact-card">
+                    <div class="contact-card__header">
+                        <i class="fas fa-phone-alt contact-icon"></i>
+                        <h3>Телефоны</h3>
+                    </div>
+                    <div class="contact-card__body">
+                        <div class="contact-item">
+                            <span class="contact-label">Горячая линия</span>
+                            <a href="tel:+78001234567" class="contact-value">8 (800) 123-45-67</a>
+                            <span class="contact-note">Бесплатно по России</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-label">Московский офис</span>
+                            <a href="tel:+74951234567" class="contact-value">+7 (495) 123-45-67</a>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-label">WhatsApp / Telegram</span>
+                            <a href="https://wa.me/79161234567" class="contact-value">+7 (916) 123-45-67</a>
+                            <span class="contact-note">Быстрая консультация</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Адрес -->
+                <div class="contact-card">
+                    <div class="contact-card__header">
+                        <i class="fas fa-map-marker-alt contact-icon"></i>
+                        <h3>Адрес офиса</h3>
+                    </div>
+                    <div class="contact-card__body">
+                        <div class="contact-item">
+                            <span class="contact-label">Основной офис</span>
+                            <address class="contact-value">
+                                г. Москва, ул. Тверская, д. 10, офис 305<br>
+                                БЦ "Центральный"
+                            </address>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-label">График работы</span>
+                            <div class="contact-value">
+                                <p>Пн-Пт: 9:00 - 20:00</p>
+                                <p>Сб: 10:00 - 18:00</p>
+                                <p>Вс: По предварительной записи</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-label">Как добраться</span>
+                            <div class="contact-transport">
+                                <span class="transport-item">
+                                    <i class="fas fa-subway"></i> Метро "Охотный ряд"
+                                </span>
+                                <span class="transport-item">
+                                    <i class="fas fa-car"></i> Парковка во дворе
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Экстренная помощь -->
+                <div class="emergency-card">
+                    <div class="emergency-icon">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <div class="emergency-content">
+                        <h4>Экстренная юридическая помощь</h4>
+                        <p>Попали в сложную ситуацию? Срочно нужна помощь адвоката?</p>
+                        <a href="tel:+79161234567" class="btn btn--emergency">
+                            <i class="fas fa-phone"></i>
+                            Экстренный вызов: +7 (916) 123-45-67
+                        </a>
+                        <p class="emergency-note">Работаем 24/7 по уголовным делам</p>
+                    </div>
+                </div>
+
+                <!-- Социальные сети -->
+                <div class="social-card">
+                    <h3>Мы в социальных сетях</h3>
+                    <p>Подпишитесь, чтобы быть в курсе юридических новостей</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="ВКонтакте">
+                            <i class="fab fa-vk"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Telegram">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Правая колонка: Форма -->
+            <div class="contacts__form">
+                <div class="form-card">
+                    <div class="form-header">
+                        <h3>Записаться на консультацию</h3>
+                        <p>Заполните форму, и мы свяжемся с вами в течение 30 минут</p>
+                    </div>
+                    
+                    <form id="consultation-form" class="consultation-form">
+                        <div class="form-group">
+                            <label for="name">Ваше имя *</label>
+                            <input type="text" id="name" name="name" required 
+                                   placeholder="Иванов Иван Иванович">
+                            <i class="fas fa-user input-icon"></i>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Телефон *</label>
+                                <input type="tel" id="phone" name="phone" required 
+                                       placeholder="+7 (999) 123-45-67">
+                                <i class="fas fa-phone input-icon"></i>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" 
+                                       placeholder="ivanov@example.com">
+                                <i class="fas fa-envelope input-icon"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service">Интересующая услуга</label>
+                            <select id="service" name="service">
+                                <option value="">Выберите услугу</option>
+                                <option value="civil">Гражданские дела</option>
+                                <option value="criminal">Уголовные дела</option>
+                                <option value="arbitration">Арбитражные споры</option>
+                                <option value="family">Семейные споры</option>
+                                <option value="property">Недвижимость</option>
+                                <option value="business">Бизнес-консультирование</option>
+                            </select>
+                            <i class="fas fa-chevron-down input-icon"></i>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Краткое описание ситуации</label>
+                            <textarea id="message" name="message" rows="4" 
+                                      placeholder="Опишите вашу ситуацию..."></textarea>
+                            <i class="fas fa-comment input-icon"></i>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="privacy" name="privacy" required>
+                            <label for="privacy">
+                                Я согласен на обработку персональных данных
+                                <a href="/privacy">(Политика конфиденциальности)</a>
+                            </label>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="urgent" name="urgent">
+                            <label for="urgent">Требуется срочная консультация</label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn--primary btn--block">
+                            <i class="fas fa-paper-plane"></i>
+                            Отправить заявку
+                        </button>
+                        
+                        <p class="form-note">
+                            <i class="fas fa-shield-alt"></i>
+                            Все данные защищены и не передаются третьим лицам
+                        </p>
+                    </form>
+                </div>
+
+                <!-- Карта -->
+                <div class="map-card">
+                    <div class="map-header">
+                        <h3>Наш офис на карте</h3>
+                        <button class="btn btn--outline btn--small" id="open-map">
+                            <i class="fas fa-external-link-alt"></i>
+                            Открыть в Google Maps
+                        </button>
+                    </div>
+                    <div class="map-container">
+                        <!-- Здесь будет интеграция с картами -->
+                        <div class="map-placeholder">
+                            <div class="map-marker">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="map-info">
+                                <h4>Юридическая компания "Защита Права"</h4>
+                                <p>г. Москва, ул. Тверская, д. 10</p>
+                                <p class="map-coords">55.7570° N, 37.6170° E</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Дополнительные контакты -->
+                <div class="additional-contacts">
+                    <div class="additional-contact">
+                        <i class="fas fa-envelope-open-text"></i>
+                        <div>
+                            <h4>Электронная почта</h4>
+                            <a href="mailto:info@law-protect.ru">info@law-protect.ru</a>
+                            <p>Для официальных запросов</p>
+                        </div>
+                    </div>
+                    <div class="additional-contact">
+                        <i class="fas fa-fax"></i>
+                        <div>
+                            <h4>Факс</h4>
+                            <span>+7 (495) 123-45-68</span>
+                            <p>Для юридических документов</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Филиалы -->
+        <div class="branches">
+            <h3 class="branches-title">Наши филиалы</h3>
+            <div class="branches-grid">
+                <div class="branch-card">
+                    <div class="branch-icon">
+                        <i class="fas fa-city"></i>
+                    </div>
+                    <h4>Санкт-Петербург</h4>
+                    <p>Невский пр-т, д. 25</p>
+                    <a href="tel:+78121234567">+7 (812) 123-45-67</a>
+                </div>
+                <div class="branch-card">
+                    <div class="branch-icon">
+                        <i class="fas fa-city"></i>
+                    </div>
+                    <h4>Екатеринбург</h4>
+                    <p>ул. Ленина, д. 50</p>
+                    <a href="tel:+73431234567">+7 (343) 123-45-67</a>
+                </div>
+                <div class="branch-card">
+                    <div class="branch-icon">
+                        <i class="fas fa-city"></i>
+                    </div>
+                    <h4>Новосибирск</h4>
+                    <p>Красный пр-т, д. 30</p>
+                    <a href="tel:+73831234567">+7 (383) 123-45-67</a>
+                </div>
+                <div class="branch-card">
+                    <div class="branch-icon">
+                        <i class="fas fa-city"></i>
+                    </div>
+                    <h4>Онлайн-консультации</h4>
+                    <p>По всей России и СНГ</p>
+                    <a href="#online">Записаться на онлайн-прием</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA внизу -->
+        <div class="contacts-cta">
+            <div class="cta-content">
+                <i class="fas fa-headset cta-icon"></i>
+                <div>
+                    <h3>Остались вопросы?</h3>
+                    <p>Позвоните нам или напишите в чат — мы поможем!</p>
+                </div>
+                <a href="#chat" class="btn btn--primary">
+                    <i class="fas fa-comments"></i>
+                    Онлайн-чат
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Декоративные элементы -->
+    <div class="contacts__decor">
+        <div class="decor-circle decor-6"></div>
+        <div class="decor-circle decor-7"></div>
+        <div class="decor-square decor-8"></div>
+    </div>
+</section>
+
+<!-- Футер -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer__content">
+            <div class="footer__logo">
+                <a href="/" class="logo">Защита Права</a>
+                <p>Юридическая компания с 2008 года</p>
+            </div>
+            
+            <div class="footer__nav">
+                <h4>Навигация</h4>
+                <ul>
+                    <li><a href="#home">Главная</a></li>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#reviews">Отзывы</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer__contact">
+                <h4>Контакты</h4>
+                <p><i class="fas fa-phone"></i> 8 (800) 123-45-67</p>
+                <p><i class="fas fa-envelope"></i> info@law-protect.ru</p>
+                <p><i class="fas fa-map-marker-alt"></i> Москва, ул. Тверская, д. 10</p>
+            </div>
+            
+            <div class="footer__legal">
+                <h4>Юридическая информация</h4>
+                <p>ОГРН: 1234567890123</p>
+                <p>ИНН: 1234567890</p>
+                <p>© 2023 ЮК "Защита Права"</p>
+            </div>
+        </div>
+        
+        <div class="footer__bottom">
+            <p>Вся информация на сайте носит ознакомительный характер</p>
+            <div class="footer__links">
+                <a href="/privacy">Политика конфиденциальности</a>
+                <a href="/agreement">Пользовательское соглашение</a>
+                <a href="/sitemap">Карта сайта</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Кнопка "Наверх" -->
+<button class="scroll-top" id="scrollTop" aria-label="Наверх">
+    <i class="fas fa-chevron-up"></i>
+</button>
+
+<!-- Всплывающее окно подтверждения -->
+<div class="modal" id="successModal">
+    <div class="modal__content">
+        <div class="modal__header">
+            <div class="modal-icon success">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h3>Заявка отправлена!</h3>
+            <button class="modal-close" id="closeModal">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="modal__body">
+            <p>Мы свяжемся с вами в течение 30 минут.</p>
+            <p>Номер вашей заявки: <strong>#202312345</strong></p>
+        </div>
+        <div class="modal__footer">
+            <button class="btn btn--primary" id="closeModalBtn">Хорошо</button>
+        </div>
+    </div>
+</div>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <!-- Контент футера -->
+    </footer>
+
+    <script src="js/jscrips.js"></script>
+</body>
+</html>
